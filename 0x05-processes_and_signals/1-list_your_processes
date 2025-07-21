@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# Displays only the users of currently running processes
+ps -eo user --no-headers | sort | uniq | awk 'BEGIN {print "USER"} {print}'
